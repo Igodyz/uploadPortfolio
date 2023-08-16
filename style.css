@@ -303,6 +303,11 @@ font-size: 1.5rem;
             background-size: cover;
         }
 
+        header  {
+            justify-content: space-between;
+            padding: 30px 70;
+        }
+
         header .navegacao-primaria {
             display: ;
         }
