@@ -3,8 +3,7 @@
 //Declaramos duas variaveis, Letras e o I é o Index valor de cada letra//
 // o + serve pra ir somando e aparecer todas as letras e não ficar só trocando//
 
-
-
+function escrevendoLetra (){
 function ativaLetra(eLemento){
     const arrTexto = eLemento.innerHTML.split('')
     eLemento.innerHTML = ''
@@ -18,3 +17,12 @@ function ativaLetra(eLemento){
 
 const titulo = document.querySelector('.digitando')
 ativaLetra(titulo)
+}
+
+const ativaMenu = document.querySelector('.fa-bars');
+const navMenu = document.querySelector('header .navegacao-primaria')
+
+ativaMenu.addEventListener('click', ()=>{
+    ativaMenu.classList.toggle('fa-x')
+    navMenu.classList.toggle('ativado')
+})
